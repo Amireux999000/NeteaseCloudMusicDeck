@@ -13,6 +13,7 @@ jobs:
     with:
       version: ${{ github.event.release.tag_name }}
       source: src/NeteaseCloudPilot
+      cli-version: 3.0.0-beta.17
       run-stub-host: false
       upload-artifact: true
       artifact-retention-days: 7
