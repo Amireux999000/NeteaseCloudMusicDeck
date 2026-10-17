@@ -1,0 +1,30 @@
+{
+  "manifestVersion": 1,
+  "id": "com.amireux999000.netease-cloud-pilot",
+  "name": "NetEase Cloud Music Pilot for Macro Deck",
+  "version": "1.0.0",
+  "description": "控制网易云音乐播放的 Macro Deck 插件。基于 Windows 系统媒体传输控制（SMTC）自动检测并控制播放，支持播放/暂停/切歌/进度跳转/音量调节/喜欢/桌面歌词，以及实时歌曲信息和专辑封面显示。无需 API Key 或第三方修改工具。\n\n前置要求：Windows 10 1809+、已安装网易云音乐桌面端并正在播放。\n\n已知限制：随机播放/循环模式仅可读不可改；喜欢状态无法回读；音量通过全局快捷键控制。",
+  "ai": {
+    "interaction": false,
+    "generatedContent": false,
+    "generatedAssets": true
+  },
+  "icon": "Assets/icon.svg",
+  "entrypoints": {
+    "win-x64": {
+      "executable": "runtimes/win-x64/NeteaseCloudPilot.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    }
+  },
+  "publisher": {
+    "name": "amireux999000"
+  },
+  "repository": "https://github.com/amireux999000/NeteaseCloudMusicDeck",
+  "license": "MIT",
+  "compatibility": {
+    "macroDeck": ">=3.0.0-beta.15"
+  }
+}

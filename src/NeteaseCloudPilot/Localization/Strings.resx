@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- 播放器 -->
+  <data name="Player.Name" xml:space="preserve"><value>网易云音乐</value></data>
+
+  <!-- 动作：播放控制 -->
+  <data name="Actions.Transport.Play.Name" xml:space="preserve"><value>播放</value></data>
+  <data name="Actions.Transport.Play.Description" xml:space="preserve"><value>在网易云音乐中开始播放。</value></data>
+  <data name="Actions.Transport.Pause.Name" xml:space="preserve"><value>暂停</value></data>
+  <data name="Actions.Transport.Pause.Description" xml:space="preserve"><value>暂停网易云音乐播放。</value></data>
+  <data name="Actions.Transport.TogglePlay.Name" xml:space="preserve"><value>播放 / 暂停</value></data>
+  <data name="Actions.Transport.TogglePlay.Description" xml:space="preserve"><value>在播放和暂停之间切换。</value></data>
+  <data name="Actions.Transport.TogglePlay.States.Paused" xml:space="preserve"><value>已暂停</value></data>
+  <data name="Actions.Transport.TogglePlay.States.Playing" xml:space="preserve"><value>播放中</value></data>
+  <data name="Actions.Transport.Next.Name" xml:space="preserve"><value>下一首</value></data>
+  <data name="Actions.Transport.Next.Description" xml:space="preserve"><value>跳转到下一首歌曲。</value></data>
+  <data name="Actions.Transport.Previous.Name" xml:space="preserve"><value>上一首</value></data>
+  <data name="Actions.Transport.Previous.Description" xml:space="preserve"><value>返回上一首歌曲。</value></data>
+
+  <!-- 动作：跳转 -->
+  <data name="Actions.SeekTo.Name" xml:space="preserve"><value>跳转到</value></data>
+  <data name="Actions.SeekTo.Description" xml:space="preserve"><value>跳转到当前歌曲的指定进度百分比。</value></data>
+  <data name="Actions.SeekTo.Percent.Label" xml:space="preserve"><value>进度</value></data>
+  <data name="Actions.SeekTo.Percent.Description" xml:space="preserve"><value>要跳转到的歌曲进度百分比。</value></data>
+  <data name="Actions.SeekTo.Errors.NoDuration" xml:space="preserve"><value>无法跳转：未知歌曲时长。</value></data>
+
+  <!-- 动作：音量 -->
+  <data name="Actions.SetVolume.Name" xml:space="preserve"><value>设置音量</value></data>
+  <data name="Actions.SetVolume.Description" xml:space="preserve"><value>设置网易云音乐的音量大小。</value></data>
+  <data name="Actions.SetVolume.Volume.Label" xml:space="preserve"><value>音量</value></data>
+  <data name="Actions.SetVolume.Volume.Description" xml:space="preserve"><value>目标音量（0–100）。</value></data>
+  <data name="Actions.VolumeStep.Name" xml:space="preserve"><value>音量调节</value></data>
+  <data name="Actions.VolumeStep.Description" xml:space="preserve"><value>按指定步数增大或减小音量。</value></data>
+  <data name="Actions.VolumeStep.Step.Label" xml:space="preserve"><value>步数</value></data>
+  <data name="Actions.VolumeStep.Step.Description" xml:space="preserve"><value>音量调节的步数。</value></data>
+  <data name="Actions.VolumeStep.Direction.Label" xml:space="preserve"><value>方向</value></data>
+  <data name="Actions.VolumeStep.Direction.Description" xml:space="preserve"><value>增大或减小音量。</value></data>
+  <data name="Actions.VolumeStep.Direction.Up" xml:space="preserve"><value>增大</value></data>
+  <data name="Actions.VolumeStep.Direction.Down" xml:space="preserve"><value>减小</value></data>
+  <data name="Actions.SetMute.Name" xml:space="preserve"><value>静音切换</value></data>
+  <data name="Actions.SetMute.Description" xml:space="preserve"><value>静音或取消静音网易云音乐。</value></data>
+
+  <!-- 动作：喜欢 -->
+  <data name="Actions.Like.Name" xml:space="preserve"><value>喜欢 / 取消喜欢</value></data>
+  <data name="Actions.Like.Description" xml:space="preserve"><value>喜欢或取消喜欢当前歌曲（Alt+L）。</value></data>
+  <data name="Actions.Like.States.Neutral" xml:space="preserve"><value>喜欢</value></data>
+
+  <!-- 动作：歌词 -->
+  <data name="Actions.Lyrics.Name" xml:space="preserve"><value>桌面歌词切换</value></data>
+  <data name="Actions.Lyrics.Description" xml:space="preserve"><value>显示或隐藏桌面歌词（Ctrl+D）。</value></data>
+
+  <!-- 动作：重新开始 -->
+  <data name="Actions.RestartTrack.Name" xml:space="preserve"><value>重新播放</value></data>
+  <data name="Actions.RestartTrack.Description" xml:space="preserve"><value>从头开始播放当前歌曲。</value></data>
+
+  <!-- 动作：打开应用 -->
+  <data name="Actions.OpenApp.Name" xml:space="preserve"><value>打开网易云音乐</value></data>
+  <data name="Actions.OpenApp.Description" xml:space="preserve"><value>启动网易云音乐或将其窗口置于前台。</value></data>
+  <data name="Actions.OpenApp.Errors.LaunchFailed" xml:space="preserve"><value>无法找到或启动网易云音乐，请确认已安装。</value></data>
+
+  <!-- 动作：错误 -->
+  <data name="Actions.Errors.NotRunning" xml:space="preserve"><value>网易云音乐未运行。</value></data>
+  <data name="Actions.Errors.CommandFailed" xml:space="preserve"><value>网易云音乐未接受该命令。</value></data>
+  <data name="Actions.Errors.Cancelled" xml:space="preserve"><value>操作已取消。</value></data>
+  <data name="Actions.Errors.Unexpected" xml:space="preserve"><value>发生未知错误。</value></data>
+
+  <!-- 变量 -->
+  <data name="Variables.IsPlaying.Display" xml:space="preserve"><value>是否正在播放</value></data>
+  <data name="Variables.IsPlaying.Description" xml:space="preserve"><value>网易云音乐当前是否正在播放。</value></data>
+  <data name="Variables.PlaybackState.Display" xml:space="preserve"><value>播放状态</value></data>
+  <data name="Variables.PlaybackState.Description" xml:space="preserve"><value>当前播放状态：播放中、已暂停或已停止。</value></data>
+  <data name="Variables.CurrentPosition.Display" xml:space="preserve"><value>当前进度</value></data>
+  <data name="Variables.CurrentPosition.Description" xml:space="preserve"><value>当前播放位置（分:秒）。</value></data>
+  <data name="Variables.TrackDuration.Display" xml:space="preserve"><value>歌曲时长</value></data>
+  <data name="Variables.TrackDuration.Description" xml:space="preserve"><value>当前歌曲总时长（分:秒）。</value></data>
+  <data name="Variables.ProgressSeconds.Display" xml:space="preserve"><value>进度（秒）</value></data>
+  <data name="Variables.ProgressSeconds.Description" xml:space="preserve"><value>当前播放位置（秒）。</value></data>
+  <data name="Variables.ProgressPercentage.Display" xml:space="preserve"><value>进度（%）</value></data>
+  <data name="Variables.ProgressPercentage.Description" xml:space="preserve"><value>播放进度百分比。</value></data>
+  <data name="Variables.TrackName.Display" xml:space="preserve"><value>歌曲名称</value></data>
+  <data name="Variables.TrackName.Description" xml:space="preserve"><value>当前播放歌曲的标题。</value></data>
+  <data name="Variables.ArtistName.Display" xml:space="preserve"><value>艺术家</value></data>
+  <data name="Variables.ArtistName.Description" xml:space="preserve"><value>当前播放歌曲的艺术家。</value></data>
+  <data name="Variables.AlbumName.Display" xml:space="preserve"><value>专辑名称</value></data>
+  <data name="Variables.AlbumName.Description" xml:space="preserve"><value>当前播放歌曲的专辑。</value></data>
+  <data name="Variables.AlbumArtist.Display" xml:space="preserve"><value>专辑艺术家</value></data>
+  <data name="Variables.AlbumArtist.Description" xml:space="preserve"><value>当前播放歌曲的专辑艺术家。</value></data>
+  <data name="Variables.TrackNumber.Display" xml:space="preserve"><value>曲目编号</value></data>
+  <data name="Variables.TrackNumber.Description" xml:space="preserve"><value>歌曲在专辑中的编号。</value></data>
+  <data name="Variables.Volume.Display" xml:space="preserve"><value>音量</value></data>
+  <data name="Variables.Volume.Description" xml:space="preserve"><value>当前音量大小（0–100）。</value></data>
+  <data name="Variables.Shuffle.Display" xml:space="preserve"><value>随机播放</value></data>
+  <data name="Variables.Shuffle.Description" xml:space="preserve"><value>是否开启随机播放。</value></data>
+  <data name="Variables.RepeatMode.Display" xml:space="preserve"><value>循环模式</value></data>
+  <data name="Variables.RepeatMode.Description" xml:space="preserve"><value>当前循环模式：关闭、单曲循环或列表循环。</value></data>
+  <data name="Variables.ConnectionStatus.Display" xml:space="preserve"><value>连接状态</value></data>
+  <data name="Variables.ConnectionStatus.Description" xml:space="preserve"><value>插件是否已连接到网易云音乐。</value></data>
+
+  <!-- 问题提示 -->
+  <data name="Issues.NotRunning.Title" xml:space="preserve"><value>网易云音乐未运行</value></data>
+  <data name="Issues.NotRunning.Description" xml:space="preserve"><value>启动网易云音乐并播放歌曲，以启用播放控制和实时歌曲信息。</value></data>
+  <data name="Issues.NotRunning.Action" xml:space="preserve"><value>启动网易云音乐</value></data>
+  <data name="Issues.NotRunning.ResolveOk" xml:space="preserve"><value>网易云音乐正在启动，播放一首歌曲即可连接。</value></data>
+  <data name="Issues.NotRunning.ResolveFailed" xml:space="preserve"><value>无法启动网易云音乐，请手动打开。</value></data>
+  <data name="Issues.Unknown" xml:space="preserve"><value>未知问题。</value></data>
+</root>

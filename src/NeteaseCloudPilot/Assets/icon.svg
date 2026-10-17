@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E60026;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0001E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <!-- Cloud shape -->
+  <path d="M38 78 C28 78 22 70 24 62 C26 54 34 50 42 52 C44 42 54 36 64 38 C74 40 80 48 80 56 C88 54 96 60 96 68 C96 76 88 82 80 80 L44 80 C42 80 40 79 38 78 Z"
+        fill="white" opacity="0.95"/>
+  <!-- Music note -->
+  <g transform="translate(48, 52)">
+    <ellipse cx="14" cy="28" rx="8" ry="6" fill="#E60026"/>
+    <rect x="20" y="8" width="3.5" height="22" rx="1.5" fill="#E60026"/>
+    <path d="M23.5 8 C23.5 4 28 2 32 4 C36 6 36 10 33 12 L23.5 16 Z" fill="#E60026"/>
+  </g>
+</svg>

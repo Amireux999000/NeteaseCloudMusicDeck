@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+        <EnableWindowsTargeting>true</EnableWindowsTargeting>
+        <IsPackable>false</IsPackable>
+        <Company>amireux999000</Company>
+        <Authors>amireux999000</Authors>
+        <Product>NetEase Cloud Music Pilot for Macro Deck</Product>
+        <Description>Control NetEase Cloud Music from Macro Deck using Windows System Media Transport Controls (SMTC).</Description>
+        <Version>1.0.0</Version>
+        <RootNamespace>Amireux999000.NeteaseCloudPilot</RootNamespace>
+        <AssemblyName>NeteaseCloudPilot</AssemblyName>
+        <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="Amireux999000.NeteaseCloudPilot.Tests" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MacroDeck.Plugin.Analyzers" PrivateAssets="all" />
+        <PackageReference Include="MacroDeck.Localization" />
+        <PackageReference Include="MacroDeck.Plugin.Hosting" />
+        <PackageReference Include="MacroDeck.Plugin.Serilog" />
+        <PackageReference Include="MacroDeck.Sdk" />
+        <PackageReference Include="MacroDeck.Ui" />
+        <PackageReference Include="MacroDeck.Ui.Model" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="manifest.json" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="Assets\icon.svg" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="macrodeck-build.json" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="tests\**" />
+        <None Remove="tests\**" />
+        <EmbeddedResource Remove="tests\**" />
+    </ItemGroup>
+
+</Project>

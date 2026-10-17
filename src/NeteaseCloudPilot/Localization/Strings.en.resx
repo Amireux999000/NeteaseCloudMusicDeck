@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- Player -->
+  <data name="Player.Name" xml:space="preserve"><value>NetEase Cloud Music</value></data>
+
+  <!-- Actions: Transport -->
+  <data name="Actions.Transport.Play.Name" xml:space="preserve"><value>Play</value></data>
+  <data name="Actions.Transport.Play.Description" xml:space="preserve"><value>Start playback in NetEase Cloud Music.</value></data>
+  <data name="Actions.Transport.Pause.Name" xml:space="preserve"><value>Pause</value></data>
+  <data name="Actions.Transport.Pause.Description" xml:space="preserve"><value>Pause playback in NetEase Cloud Music.</value></data>
+  <data name="Actions.Transport.TogglePlay.Name" xml:space="preserve"><value>Toggle Play / Pause</value></data>
+  <data name="Actions.Transport.TogglePlay.Description" xml:space="preserve"><value>Toggle between playing and paused.</value></data>
+  <data name="Actions.Transport.TogglePlay.States.Paused" xml:space="preserve"><value>Paused</value></data>
+  <data name="Actions.Transport.TogglePlay.States.Playing" xml:space="preserve"><value>Playing</value></data>
+  <data name="Actions.Transport.Next.Name" xml:space="preserve"><value>Next Track</value></data>
+  <data name="Actions.Transport.Next.Description" xml:space="preserve"><value>Skip to the next track.</value></data>
+  <data name="Actions.Transport.Previous.Name" xml:space="preserve"><value>Previous Track</value></data>
+  <data name="Actions.Transport.Previous.Description" xml:space="preserve"><value>Go back to the previous track.</value></data>
+
+  <!-- Actions: Seek -->
+  <data name="Actions.SeekTo.Name" xml:space="preserve"><value>Seek To</value></data>
+  <data name="Actions.SeekTo.Description" xml:space="preserve"><value>Jump to a percentage of the current track.</value></data>
+  <data name="Actions.SeekTo.Percent.Label" xml:space="preserve"><value>Position</value></data>
+  <data name="Actions.SeekTo.Percent.Description" xml:space="preserve"><value>Percentage of the track to seek to.</value></data>
+  <data name="Actions.SeekTo.Errors.NoDuration" xml:space="preserve"><value>Cannot seek: track duration is unknown.</value></data>
+
+  <!-- Actions: Volume -->
+  <data name="Actions.SetVolume.Name" xml:space="preserve"><value>Set Volume</value></data>
+  <data name="Actions.SetVolume.Description" xml:space="preserve"><value>Set the NetEase Cloud Music volume level.</value></data>
+  <data name="Actions.SetVolume.Volume.Label" xml:space="preserve"><value>Volume</value></data>
+  <data name="Actions.SetVolume.Volume.Description" xml:space="preserve"><value>Target volume (0–100).</value></data>
+  <data name="Actions.VolumeStep.Name" xml:space="preserve"><value>Volume Step</value></data>
+  <data name="Actions.VolumeStep.Description" xml:space="preserve"><value>Increase or decrease volume by a number of steps.</value></data>
+  <data name="Actions.VolumeStep.Step.Label" xml:space="preserve"><value>Steps</value></data>
+  <data name="Actions.VolumeStep.Step.Description" xml:space="preserve"><value>Number of volume steps.</value></data>
+  <data name="Actions.VolumeStep.Direction.Label" xml:space="preserve"><value>Direction</value></data>
+  <data name="Actions.VolumeStep.Direction.Description" xml:space="preserve"><value>Whether to raise or lower the volume.</value></data>
+  <data name="Actions.VolumeStep.Direction.Up" xml:space="preserve"><value>Up</value></data>
+  <data name="Actions.VolumeStep.Direction.Down" xml:space="preserve"><value>Down</value></data>
+  <data name="Actions.SetMute.Name" xml:space="preserve"><value>Toggle Mute</value></data>
+  <data name="Actions.SetMute.Description" xml:space="preserve"><value>Mute or unmute NetEase Cloud Music.</value></data>
+
+  <!-- Actions: Like -->
+  <data name="Actions.Like.Name" xml:space="preserve"><value>Toggle Like</value></data>
+  <data name="Actions.Like.Description" xml:space="preserve"><value>Like or unlike the current song (Alt+L).</value></data>
+  <data name="Actions.Like.States.Neutral" xml:space="preserve"><value>Like</value></data>
+
+  <!-- Actions: Lyrics -->
+  <data name="Actions.Lyrics.Name" xml:space="preserve"><value>Toggle Lyrics</value></data>
+  <data name="Actions.Lyrics.Description" xml:space="preserve"><value>Show or hide desktop lyrics (Ctrl+D).</value></data>
+
+  <!-- Actions: Restart -->
+  <data name="Actions.RestartTrack.Name" xml:space="preserve"><value>Restart Track</value></data>
+  <data name="Actions.RestartTrack.Description" xml:space="preserve"><value>Restart the current song from the beginning.</value></data>
+
+  <!-- Actions: Open App -->
+  <data name="Actions.OpenApp.Name" xml:space="preserve"><value>Open NetEase Cloud Music</value></data>
+  <data name="Actions.OpenApp.Description" xml:space="preserve"><value>Launch the NetEase Cloud Music app or bring it to the front.</value></data>
+  <data name="Actions.OpenApp.Errors.LaunchFailed" xml:space="preserve"><value>Could not find or launch NetEase Cloud Music. Is it installed?</value></data>
+
+  <!-- Actions: Errors -->
+  <data name="Actions.Errors.NotRunning" xml:space="preserve"><value>NetEase Cloud Music is not running.</value></data>
+  <data name="Actions.Errors.CommandFailed" xml:space="preserve"><value>The command was not accepted by NetEase Cloud Music.</value></data>
+  <data name="Actions.Errors.Cancelled" xml:space="preserve"><value>The action was cancelled.</value></data>
+  <data name="Actions.Errors.Unexpected" xml:space="preserve"><value>An unexpected error occurred.</value></data>
+
+  <!-- Variables -->
+  <data name="Variables.IsPlaying.Display" xml:space="preserve"><value>Is Playing</value></data>
+  <data name="Variables.IsPlaying.Description" xml:space="preserve"><value>Whether NetEase Cloud Music is currently playing.</value></data>
+  <data name="Variables.PlaybackState.Display" xml:space="preserve"><value>Playback State</value></data>
+  <data name="Variables.PlaybackState.Description" xml:space="preserve"><value>Current playback state: Playing, Paused, or Stopped.</value></data>
+  <data name="Variables.CurrentPosition.Display" xml:space="preserve"><value>Current Position</value></data>
+  <data name="Variables.CurrentPosition.Description" xml:space="preserve"><value>Current playback position as m:ss.</value></data>
+  <data name="Variables.TrackDuration.Display" xml:space="preserve"><value>Track Duration</value></data>
+  <data name="Variables.TrackDuration.Description" xml:space="preserve"><value>Total duration of the current track as m:ss.</value></data>
+  <data name="Variables.ProgressSeconds.Display" xml:space="preserve"><value>Progress (seconds)</value></data>
+  <data name="Variables.ProgressSeconds.Description" xml:space="preserve"><value>Current playback position in seconds.</value></data>
+  <data name="Variables.ProgressPercentage.Display" xml:space="preserve"><value>Progress (%)</value></data>
+  <data name="Variables.ProgressPercentage.Description" xml:space="preserve"><value>Playback progress as a percentage.</value></data>
+  <data name="Variables.TrackName.Display" xml:space="preserve"><value>Track Name</value></data>
+  <data name="Variables.TrackName.Description" xml:space="preserve"><value>Title of the currently playing track.</value></data>
+  <data name="Variables.ArtistName.Display" xml:space="preserve"><value>Artist Name</value></data>
+  <data name="Variables.ArtistName.Description" xml:space="preserve"><value>Artist of the currently playing track.</value></data>
+  <data name="Variables.AlbumName.Display" xml:space="preserve"><value>Album Name</value></data>
+  <data name="Variables.AlbumName.Description" xml:space="preserve"><value>Album of the currently playing track.</value></data>
+  <data name="Variables.AlbumArtist.Display" xml:space="preserve"><value>Album Artist</value></data>
+  <data name="Variables.AlbumArtist.Description" xml:space="preserve"><value>Album artist of the currently playing track.</value></data>
+  <data name="Variables.TrackNumber.Display" xml:space="preserve"><value>Track Number</value></data>
+  <data name="Variables.TrackNumber.Description" xml:space="preserve"><value>Track number on the album.</value></data>
+  <data name="Variables.Volume.Display" xml:space="preserve"><value>Volume</value></data>
+  <data name="Variables.Volume.Description" xml:space="preserve"><value>Current volume level (0–100).</value></data>
+  <data name="Variables.Shuffle.Display" xml:space="preserve"><value>Shuffle</value></data>
+  <data name="Variables.Shuffle.Description" xml:space="preserve"><value>Whether shuffle is enabled.</value></data>
+  <data name="Variables.RepeatMode.Display" xml:space="preserve"><value>Repeat Mode</value></data>
+  <data name="Variables.RepeatMode.Description" xml:space="preserve"><value>Current repeat mode: Off, Track, or Context.</value></data>
+  <data name="Variables.ConnectionStatus.Display" xml:space="preserve"><value>Connection Status</value></data>
+  <data name="Variables.ConnectionStatus.Description" xml:space="preserve"><value>Whether the plugin is connected to NetEase Cloud Music.</value></data>
+
+  <!-- Issues -->
+  <data name="Issues.NotRunning.Title" xml:space="preserve"><value>NetEase Cloud Music is not running</value></data>
+  <data name="Issues.NotRunning.Description" xml:space="preserve"><value>Start NetEase Cloud Music and play a song to enable playback controls and now-playing info.</value></data>
+  <data name="Issues.NotRunning.Action" xml:space="preserve"><value>Launch NetEase Cloud Music</value></data>
+  <data name="Issues.NotRunning.ResolveOk" xml:space="preserve"><value>NetEase Cloud Music is launching. Play a song to connect.</value></data>
+  <data name="Issues.NotRunning.ResolveFailed" xml:space="preserve"><value>Could not launch NetEase Cloud Music. Please start it manually.</value></data>
+  <data name="Issues.Unknown" xml:space="preserve"><value>Unknown issue.</value></data>
+</root>
