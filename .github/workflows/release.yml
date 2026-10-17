@@ -13,11 +13,6 @@ jobs:
     with:
       version: ${{ github.event.release.tag_name }}
       source: src/NeteaseCloudPilot
-      # Single-runner cross-build works on Linux thanks to EnableWindowsTargeting=true.
-      # build-per-platform is NOT needed (it caused "No platform packages were handed over").
-      # Stub host conformance test is disabled for the initial release.
-      # Re-enable once verified (plugin requires SMTC at startup).
       run-stub-host: false
-      # Keep the built package as a workflow artifact for 7 days.
       upload-artifact: true
       artifact-retention-days: 7
