@@ -152,7 +152,8 @@ public sealed class WindowController
 
         try
         {
-            var wasForeground = GetForegroundWindow() == hwnd;
+            var previousForeground = GetForegroundWindow();
+            var wasForeground = previousForeground == hwnd;
             if (!wasForeground)
             {
                 BringToFront();
@@ -183,9 +184,10 @@ public sealed class WindowController
                 _logger.Debug("SendInput returned 0; no keyboard events were injected.");
             }
 
-            if (!wasForeground)
+            if (!wasForeground && previousForeground != IntPtr.Zero)
             {
                 Thread.Sleep(50);
+                SetForegroundWindow(previousForeground);
             }
 
             return true;

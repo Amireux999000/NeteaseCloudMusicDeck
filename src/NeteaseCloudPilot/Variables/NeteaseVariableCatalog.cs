@@ -103,7 +103,7 @@ public static class NeteaseVariableCatalog
         new("shuffle", VariableType.Boolean,
             s => s.ShuffleEnabledKnown ? s.ShuffleEnabled : null,
             Strings.Variables.Shuffle.Display(), Strings.Variables.Shuffle.Description(),
-            source: VariableSource.Transport, writable: true),
+            source: VariableSource.Transport),
 
         new("repeat_mode", VariableType.Text,
             s => !s.RepeatModeKnown ? null : s.RepeatMode switch
@@ -113,7 +113,7 @@ public static class NeteaseVariableCatalog
                 _ => "Off",
             },
             Strings.Variables.RepeatMode.Display(), Strings.Variables.RepeatMode.Description(),
-            source: VariableSource.Transport, writable: true),
+            source: VariableSource.Transport),
 
         // ── Connection ────────────────────────────────────────────────────────
 

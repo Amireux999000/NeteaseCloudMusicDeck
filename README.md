@@ -112,7 +112,7 @@ macrodeck-plugin build --output ../../artifacts
 ### Project structure
 ```
 NeteaseCloudMusicDeck/
-├── .github/workflows/publish.yml   # Official release workflow
+├── .github/workflows/release.yml   # Official release workflow
 ├── src/NeteaseCloudPilot/
 │   ├── Program.cs                  # Plugin entry point & DI setup
 │   ├── NeteaseIntegration.cs       # IPluginIntegration + IVariableProvider + IMusicPlayerProvider

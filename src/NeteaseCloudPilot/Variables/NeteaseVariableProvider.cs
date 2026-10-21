@@ -1,6 +1,5 @@
 using System.Text.Json;
 using MacroDeck.Sdk;
-using MacroDeck.Sdk.MusicPlayer;
 using MacroDeck.Sdk.Variables;
 using Serilog;
 using Amireux999000.NeteaseCloudPilot.Media;
@@ -146,32 +145,6 @@ public sealed class NeteaseVariableProvider : IVariableProvider
                 return VariableWriteResult.Applied();
             }
 
-            case "shuffle":
-            {
-                if (!TryReadBoolean(value, out var shuffle))
-                {
-                    return VariableWriteResult.InvalidValue();
-                }
-
-                // SMTC does not allow setting shuffle for most desktop apps;
-                // we report it as applied but it may not take effect.
-                _logger.Debug("Shuffle write requested ({Shuffle}); SMTC may not support changing it.", shuffle);
-                return VariableWriteResult.Applied();
-            }
-
-            case "repeat-mode":
-            {
-                var mode = value?.ToString()?.ToLowerInvariant() switch
-                {
-                    "track" => RepeatMode.Track,
-                    "context" => RepeatMode.Context,
-                    _ => RepeatMode.Off,
-                };
-
-                _state.Update(s => s with { RepeatMode = mode, RepeatModeKnown = true });
-                return VariableWriteResult.Applied();
-            }
-
             default:
                 return VariableWriteResult.NotWritable();
         }
@@ -235,17 +208,5 @@ public sealed class NeteaseVariableProvider : IVariableProvider
         }
 
         return TryReadNumber(value, out milliseconds);
-    }
-
-    private static bool TryReadBoolean(object? value, out bool state)
-    {
-        switch (value)
-        {
-            case bool b: state = b; return true;
-            case string text when bool.TryParse(text, out var parsed): state = parsed; return true;
-            case JsonElement { ValueKind: JsonValueKind.True }: state = true; return true;
-            case JsonElement { ValueKind: JsonValueKind.False }: state = false; return true;
-            default: state = false; return false;
-        }
     }
 }
