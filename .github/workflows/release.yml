@@ -14,7 +14,7 @@ jobs:
       version: ${{ github.event.release.tag_name }}
       source: src/NeteaseCloudPilot
       # Minimum CLI version required by the Platform (default is too old).
-      cli-version: 3.0.0-beta.17
+      cli-version: 3.0.0-beta.18
       # Single-runner cross-build works on Linux thanks to EnableWindowsTargeting=true.
       # build-per-platform is NOT needed (it caused "No platform packages were handed over").
       # run-stub-host defaults to true and is REQUIRED by the Platform (conformance report).
